@@ -25,7 +25,7 @@ Same as Percentiles, but divided into four parts
 - Q2 = 2nd quartile, or 50th percentile (also the median)
 - Q3 = 3rd quartile, or 75th percentile
 
-# 1. Measures of Variability
+# 2. Measures of Variability
 ## Range
 Range = Largest value - Smallest value
 
@@ -44,7 +44,7 @@ $\sigma^2 = \dfrac{\Sigma(x_{i} - \mu)^2}{N}$
 ### Sample Variance
 Same as population varience but for a sample of a population
 
-$s^2 = \dfrac{\Sigma (x_{i} - \bar{x})}{n - 1}$
+$s^2 = \dfrac{\Sigma (x_{i} - \bar{x})^2}{n - 1}$
 
 ## Standard deviation
 Is calculated as a square root of varience
@@ -95,3 +95,47 @@ where $z$ is any value greater than 1.
      - Outliers are shown as asterisks
 <img width="821" alt="image" src="https://user-images.githubusercontent.com/50662246/212493871-4125184f-795c-4ecc-9112-d0357599ecb3.png">
 
+# Measures of Association Between Two Variables
+## Covariance
+Measure of the directional relationship between two random variables
+### Sample covariance
+$s_{xy} = \dfrac{\Sigma (x_{i} - \bar{x}) (y_{i} - \bar{y})}{n-1}$
+### Population covariance
+$\sigma_{xy} = \dfrac{\Sigma (x_{i} - \mu_{x}) (y_{i} - \mu_{y})}{N}$
+### Interpretation:
+Points in quadrant $I$ correspond to $x_{i} > \bar{x}$ and $y_{i} > \bar{y}$\
+Points in quadrant $II$ correspond to $x_{i} < \bar{x}$ and $y_{i} > y$
+
+Thus, the value of $(x_{i} − x)(y_{i} − y)$ must be\
+$>0$ for $I$ \
+$<0$ for $II$ \
+$>0$ for $III$ \
+$<0$ for $IV$ 
+
+Thus positive values indicate positive relationship vetween x and y\
+However, this measure is affected by unit of measurement (ex: large x, small y)
+<img width="828" alt="image" src="https://user-images.githubusercontent.com/50662246/212494422-d970d11e-bcaf-45be-bad3-ae1118aa9cca.png">
+
+## Correlation Coefficient
+Not affected by units of measurement\
+Shows how strong the relationship between variables is
+
+### Sample correlation
+$r_{xy} = \dfrac{s_{xy}}{s_{x} s_{y}}$\
+where\
+$r_{xy} = \text{sample correlation coefficient}$\
+$s_{xy} = \text{sample covariance}$\
+$s_{x} = \text{sample standard deviation of x}$\
+$s_{y} = \text{sample standard deviation of y}$\
+
+### Population correlation
+$p_{xy} = \dfrac{\sigma_{xy}}{\sigma_{x} \sigma_{y}}$\
+where\
+$p_{xy} = \text{population correlation coefficient}$\
+$\sigma_{xy} = \text{population covariance}$\
+$\sigma_{x} = \text{population standard deviation of x}$\
+$\sigma_{y} = \text{population standard deviation of y}$\
+
+## Interpretation
+A sample correlation coefficient of +1 corresponds to a perfect positive linear relationship between x and y.\
+This is true if points can be connected by a straight line
