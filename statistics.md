@@ -126,7 +126,7 @@ where\
 $r_{xy} = \text{sample correlation coefficient}$\
 $s_{xy} = \text{sample covariance}$\
 $s_{x} = \text{sample standard deviation of x}$\
-$s_{y} = \text{sample standard deviation of y}$\
+$s_{y} = \text{sample standard deviation of y}$
 
 ### Population correlation
 $p_{xy} = \dfrac{\sigma_{xy}}{\sigma_{x} \sigma_{y}}$\
@@ -134,7 +134,7 @@ where\
 $p_{xy} = \text{population correlation coefficient}$\
 $\sigma_{xy} = \text{population covariance}$\
 $\sigma_{x} = \text{population standard deviation of x}$\
-$\sigma_{y} = \text{population standard deviation of y}$\
+$\sigma_{y} = \text{population standard deviation of y}$
 
 ## Interpretation
 A sample correlation coefficient of +1 corresponds to a perfect positive linear relationship between x and y.\
