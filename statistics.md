@@ -261,7 +261,7 @@ $\bar{p} = \dfrac{x}{n}$
 
 ## Expected value of $\bar{p}$
 
-$E(\bar{p}} = p$
+$E(\bar{p}) = p$
 
 ## Standard deviation of $\bar{p}$
 
@@ -279,4 +279,10 @@ Same as binominal distribution, form can be approximated by normal distribution 
 
 $np >= 5 \quad \text{and} \quad n(1-p) >= 5$
 
+## Other Sampling Methods (7.8)
+1. Stratified Random Sampling
+2. Cluster Sampling
+3. Systematic Sampling
+4. Convenience Sampling
+5. Judgment Sampling
 
