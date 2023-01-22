@@ -253,5 +253,30 @@ In cases when population is highly skewed or outliers are present n > 50 is reco
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/50662246/213938162-68258a18-9a1c-4819-9b3e-b577c90ad800.png">
 
+## Sampling Distribution of $\bar{p}$ (7.6)
+The sample proportion $\bar{p}$ is the point estimator of the population proportion $p$.
+The formula is the same as for whole population: number of elements with characteristic / total number of elements
+
+$\bar{p} = \dfrac{x}{n}$
+
+## Expected value of $\bar{p}$
+
+$E(\bar{p}} = p$
+
+## Standard deviation of $\bar{p}$
+
+### Infinite population
+OR sample size $<=$ 5% of the total population\
+
+$\sigma_{\bar{p}} = \sqrt{\dfrac{p(1 - p)}{n}}$
+
+### Finite population
+
+$\sigma_{\bar{p}} = \sqrt{\dfrac{N - n}{N - 1}} \sqrt{\dfrac{p(1 - p)}{n}}$
+
+## Form of sampling distribution of $\bar{p}$
+Same as binominal distribution, form can be approximated by normal distribution IF:
+
+$np >= 5 \quad \text{and} \quad n(1-p) >= 5$
 
 
