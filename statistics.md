@@ -139,3 +139,52 @@ $\sigma_{y} = \text{population standard deviation of y}$\
 ## Interpretation
 A sample correlation coefficient of +1 corresponds to a perfect positive linear relationship between x and y.\
 This is true if points can be connected by a straight line
+
+# Combinations & Permutations
+## Counting rule for combinations
+Selecting n objects from a set of N objects (order is not important)
+
+$C_{n}^N = \dbinom{N}{n} = \dfrac{N!}{n!(N-n)!}$
+
+## Counting rule for permutations
+Selecting n objects from a set of N objects where order is important
+
+$P_{n}^N = n! \dbinom{N}{n} = \dfrac{N!}{(N-n)!}$
+
+# Probability
+## Conditional probability
+$P(A)$ - Probability of event A
+
+$P(A^c)$ - Probability of complement of event A (opposite of event A)
+
+$\cap$ - Intersection of two events\
+<img width="528" alt="image" src="https://user-images.githubusercontent.com/50662246/213828302-09afb47e-3790-4282-96db-8afc5371dad9.png">
+
+$\cup$ - Union of two events\
+<img width="518" alt="image" src="https://user-images.githubusercontent.com/50662246/213828239-4acf8690-4f52-4957-b212-664191f07595.png">
+$P(A \cup B) = P(A) + P(B) - P(A \cap B)$ \
+
+
+
+Probability of an event A given that event B occured: P(A|B)
+
+$P(A|B) = \dfrac{P(A \cap B)}{P(B)}$
+
+$P(B|A) = \dfrac{P(A \cap B)}{P(A)}$
+
+## Independent Events
+$P(A | B) = P(A)$
+
+or
+
+$P(B | A) = P(B)$
+
+## Multiplication law
+
+$P(A \cap B) = P(B) \times P(A | B)$
+
+## Bayes Theorem
+$P(A | B) = \dfrac{P(A)P(B|A)}{P(B)}$
+
+For multiple events\
+$P(A_i | B) = \dfrac{P(A_i)P(B | A_i)}{P(A_1)P(B | A_1) + P(A_2)P(B | A_2) + \dots + P(A_n)P(B | A_n)}$
