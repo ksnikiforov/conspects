@@ -161,8 +161,8 @@ $\cap$ - Intersection of two events\
 <img width="528" alt="image" src="https://user-images.githubusercontent.com/50662246/213828302-09afb47e-3790-4282-96db-8afc5371dad9.png">
 
 $\cup$ - Union of two events\
-<img width="518" alt="image" src="https://user-images.githubusercontent.com/50662246/213828239-4acf8690-4f52-4957-b212-664191f07595.png">
-$P(A \cup B) = P(A) + P(B) - P(A \cap B)$ \
+<img width="518" alt="image" src="https://user-images.githubusercontent.com/50662246/213828239-4acf8690-4f52-4957-b212-664191f07595.png">\
+$P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 
 
 
