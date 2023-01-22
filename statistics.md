@@ -228,3 +228,30 @@ $f(x) = \dfrac{1}{\mu} e^{-x/\mu}  \quad \text{for } x >= 0$\
 $\text{where }\mu = \text{expected value or mean}$
 
 <img width="313" alt="image" src="https://user-images.githubusercontent.com/50662246/213919890-e595aa87-dde7-4f2a-81f1-256f51945410.png">
+
+# Sampling
+## Expected value of $\bar{x}$
+Expected value for mean of sample is population mean
+
+$E(\bar{x}) = \mu$
+
+## Standard deviation of $\bar{x}$
+
+Depends on whether the population is finite or infinite
+
+### Infinite population
+OR sample size $<=$ 5% of the total population\
+$\sigma_{\bar{x}} = \dfrac{\sigma}{\sqrt{n}}$
+
+### Finite population
+$\sigma_{\bar{x}} = \sqrt{\dfrac{N - n}{N - 1}} \left( \dfrac{\sigma}{\sqrt{n}} \right)$
+
+### Central limit theorem
+The sampling distribution of the sample mean $\bar{x}$ can be approximated by a normal distribution as the sample size becomes large.\
+General statistical practice: if n > 30, $\bar{x}$ can be estimated using normal distribution\
+In cases when population is highly skewed or outliers are present n > 50 is recomended
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/50662246/213938162-68258a18-9a1c-4819-9b3e-b577c90ad800.png">
+
+
+
