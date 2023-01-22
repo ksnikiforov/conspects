@@ -188,3 +188,43 @@ $P(A | B) = \dfrac{P(A)P(B|A)}{P(B)}$
 
 For multiple events\
 $P(A_i | B) = \dfrac{P(A_i)P(B | A_i)}{P(A_1)P(B | A_1) + P(A_2)P(B | A_2) + \dots + P(A_n)P(B | A_n)}$
+
+# Probability Distributions
+
+## Uniform Distribution
+
+$$
+f(x) = 
+    \begin{cases}
+       \dfrac{1}{b-a} & \quad \text{for } a <= x <= b \\
+       0              & \quad \text{elsewhere}
+    \end{cases}
+$$
+
+<img width="632" alt="image" src="https://user-images.githubusercontent.com/50662246/213918793-07a55fd9-26b4-41eb-8b51-4aee0b660662.png">
+
+
+## Normal probability distribution
+
+$f(x) = \dfrac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x - \mu}{\sigma})^2}$
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/50662246/213919330-0421c4eb-5b3a-4b28-8be8-9161a4029c6e.png">
+
+Standard normal probability density function\
+Special case where $\mu = 0$ and $\sigma = 1$\
+Benefit is that values are precomputed and can be easily converted to the actual distribution
+
+$f(z) = \dfrac{1}{\sqrt{2\pi}}e^{\dfrac{-z^2}{2}}$
+
+<img width="371" alt="image" src="https://user-images.githubusercontent.com/50662246/213919521-b8f0c531-d81a-4505-a851-abc4ab32ac75.png">
+
+Converting to standard normal random variable
+
+$z = \dfrac{x - \mu}{\sigma}$
+
+## Exponential probability distribution
+
+$f(x) = \dfrac{1}{\mu} e^{-x/\mu}  \quad \text{for } x >= 0$\
+$\text{where }\mu = \text{expected value or mean}$
+
+<img width="313" alt="image" src="https://user-images.githubusercontent.com/50662246/213919890-e595aa87-dde7-4f2a-81f1-256f51945410.png">
