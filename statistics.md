@@ -338,3 +338,17 @@ We can use following to estimate $\sigma$:
 1. Use data of previous studies as the planning value for $\sigma$
 2. Use a pilot study to select a preliminary sample
 3. Use judgment or a "best guess". Estimate of largest and smallest values of data. Dividing this range by 4 provides a rough estimate of $\sigma$
+
+## Population propotion (8.4)
+Interval estimare for population proportion:
+
+$\bar{p} \pm z_{\alpha/2} \sqrt{\dfrac{\bar{p}(1 - \bar{p})}{n}}$
+
+Sample size for an interval estimate of population proportion
+
+$n = \dfrac{(z_{\alpha/2})^2 p^{\ast}(1-p^{\ast}))}{E^2}$\
+Where $p^{\ast}$ is a planing value.\
+Same estimation methods as for $\sigma$ apply. \
+If none are possible one can use $p^{\ast} = .50$ \
+This is the case because the largest value for $p^{\ast}(1-p^{\ast})$ is obtained when $p^{\ast} = .50$ 
+
