@@ -286,3 +286,55 @@ $np >= 5 \quad \text{and} \quad n(1-p) >= 5$
 4. Convenience Sampling
 5. Judgment Sampling
 
+# Interval estimation (8)
+Because point estimation cannot be expected to provide the exact value of the population parameter,\
+an interval estimate is computed\
+$\text{Interval estimate} = \text{Point estimate} \pm \text{Margin of error}$
+
+## Population mean: $\sigma$ Known
+Usually the population mean is unknown\
+However, there are scenarios where population mean IS known (or can be estimated with high accuracy)\
+For example:\
+1. When large amount of historical data is present and can be used to estimate the population standard deviation prior to sampling
+2. In quality control applications where a process is assumed to be operating correctly
+
+Interval estimate of a population mean: $\sigma$ Known
+
+$\bar{x} \pm z_{\alpha/2}\dfrac{\sigma}{\sqrt{n}}$\
+Where $(1 - \alpha)$ is confidence level and $z_{\alpha/2}$ is the $z$ value\
+providing an area of $\alpha/2$ in the upper tail of the standard normal probability distribution.
+
+## Population mean: $\sigma$ Unknown
+
+When the sample standard deviation is used to estimate $\sigma$,\
+the margin of error and interval estimate are based on t-distribution.\
+Although t-distribution is based on assumption of normal distribution\
+research shows that it can be applied in cases where distribution differs significantly from normal.
+
+t-distribution relies on degrees of freedom paramtere. \
+The higher the degrees of freedom, the closer is t-distribution to normal-distribution\
+<img width="504" alt="image" src="https://user-images.githubusercontent.com/50662246/216847720-af9e490f-3584-4656-8688-6273480a58e1.png">
+
+Interval estimate of a population mean: $\sigma$ Unknown
+
+
+$\bar{x} \pm t_{\alpha/2}\dfrac{s}{\sqrt{n}}$\
+Where $(1 - \alpha)$ is confidence level and $t_{\alpha/2}$ is the $t$ value\
+providing an area of $\alpha/2$ in the upper tail of the t distribution with $n - 1$ degrees of freedom.
+
+
+The reason degrees of freedom in the expression is $(n - 1)$ concerns the use of $s$ as an estimate of population $\sigma$\
+$s = \sqrt{\dfrac{\Sigma(x_{i} - \bar{x})^2}{n-1}}$\
+Degrees of freedom refer to the number of independent pieces of information that go into the computation of $\Sigma(x_{i} - \bar{x})^2$
+
+## Determening the sample size (8.3)
+$n = \dfrac{(z_{\alpha/2})^2 \sigma^2}{E^2}$\
+Where $E$ is the margin of error that the user is willing to accept\
+and $z_{\alpha/2}$ follows directly from the confidence level desired (usually 95%)
+
+
+The equation requres $\sigma$ to be known. However, $\sigma$ is usually not known.\
+We can use following to estimate $\sigma$:
+1. Use data of previous studies as the planning value for $\sigma$
+2. Use a pilot study to select a preliminary sample
+3. Use judgment or a "best guess". Estimate of largest and smallest values of data. Dividing this range by 4 provides a rough estimate of $\sigma$
