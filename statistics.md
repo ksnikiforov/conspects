@@ -33,7 +33,7 @@ Range = Largest value - Smallest value
 $\mathrm{IQR} = Q_{3} - Q_{1}$
 
 ## Variance
-The variance is based on the difference between the value of each observation $x_{i}$ and the mean.\
+The variance is based on the difference between the value of each observation $x_{i}$ and the mean.
 ### Population Variance
 $\sigma$ - Sigma, Denotes standard deviation\
 $\sigma^2$ - Population Varience\
@@ -181,7 +181,7 @@ $P(B | A) = P(B)$
 
 ## Multiplication law
 
-$P(A \cap B) = P(B) \times P(A | B)$
+$P(A \cap B) = P(B) P(A | B)$
 
 ## Bayes Theorem
 $P(A | B) = \dfrac{P(A)P(B|A)}{P(B)}$
@@ -352,3 +352,5 @@ Same estimation methods as for $\sigma$ apply. \
 If none are possible one can use $p^{\ast} = .50$ \
 This is the case because the largest value for $p^{\ast}(1-p^{\ast})$ is obtained when $p^{\ast} = .50$ 
 
+# Hypothesis testing
+<img width="804" alt="image" src="https://user-images.githubusercontent.com/50662246/217447468-444d82d0-9ef2-4730-aec8-29a8379fff4c.png">
