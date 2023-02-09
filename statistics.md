@@ -353,4 +353,26 @@ If none are possible one can use $p^{\ast} = .50$ \
 This is the case because the largest value for $p^{\ast}(1-p^{\ast})$ is obtained when $p^{\ast} = .50$ 
 
 # Hypothesis testing
+## Type 1 & Type 2 Errors
+<img width="615" alt="image" src="https://user-images.githubusercontent.com/50662246/217712660-0700f890-c40f-4814-a64b-7823b37f1b5a.png">
+
+## Hypothesis test formulas
 <img width="804" alt="image" src="https://user-images.githubusercontent.com/50662246/217447468-444d82d0-9ef2-4730-aec8-29a8379fff4c.png">
+
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/50662246/217701326-d3408d35-e859-40c0-a9da-da7bc85816e7.png">
+
+## Computing probability of Type 2 error
+If the decision is binary, ie we either reject or accept null hypothesis (instead of usually not rejecting)\
+Then a Type 2 error can occur - we accept the result which should have been rejected.
+
+For any true median of population, the probability of type 2 error is calculated by this formula:\
+$z = \dfrac{\bar{x} - \mu}{\sigma / \sqrt{n}}$\
+Where $\bar{x}$ is the bound of accepting the null hypothesis.
+
+<img width="749" alt="image" src="https://user-images.githubusercontent.com/50662246/217712404-a142ccc1-fc94-445b-a6ae-0ee65aca1d67.png">
+
+Power curves are usefull when assesing the probability of Type 2 error.\
+(also operating characteristic curve)
+<img width="749" alt="image" src="https://user-images.githubusercontent.com/50662246/217712529-a7708720-f5cf-4221-97b4-fc2497d521c9.png">
+
+
