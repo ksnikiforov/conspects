@@ -375,4 +375,7 @@ Power curves are usefull when assesing the probability of Type 2 error.\
 (also operating characteristic curve)
 <img width="749" alt="image" src="https://user-images.githubusercontent.com/50662246/217712529-a7708720-f5cf-4221-97b4-fc2497d521c9.png">
 
+## Sample size
+<img width="769" alt="image" src="https://user-images.githubusercontent.com/50662246/217713432-56ffb718-aabd-4622-8042-ffeb4fcb59c5.png">
+
 
