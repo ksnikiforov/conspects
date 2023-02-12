@@ -404,8 +404,16 @@ Mostly the $D_0 = 0$ variant is used to check whether two populations differ
 $z = \dfrac{(\bar{x_1} - \bar{x_2}) - D_0}{\sqrt{\dfrac{\sigma_{1}^{2}}{n_{1}} + \dfrac{\sigma_{2}^{2}}{n_{2}}}}$
 
 ## Inferences About the Difference Between Two Population Means: $\sigma_{1}$ and $\sigma_{2}$ Unknown
-$\text{Margin of error} = t_{\alpha/2}s_{\bar{x_{1}} - \bar{x_{2}}} = t_{\alpha/2}\sqrt{\dfrac{s_{1}^{2}}{n_{1}} + \dfrac{s_{2}^{2}}{n_{2}}}$
+$\text{Margin of error} = t_{\alpha/2}s_{\bar{x_{1}} - \bar{x_{2}}} = t_{\alpha/2}\sqrt{\dfrac{s_{1}^{2}}{n_{1}} + \dfrac{s_{2}^{2}}{n_{2}}}$\
 where $1 - \alpha$ is the confidence interval.
 
-Here we use t-distributin. But for this scenario it is harder to calculate degrees of freedom:\
-$df = \dfrac{\left(\dfrac{s_{1}^{2}}{n_{1}} + \dfrac{s_{2}^{2}}{n_{2}}\right)^2}{\dfrac{1}{n_1 - 1}\left(\dfrac{s_1^2}{n_1}\right) + \dfrac{1}{n_2 - 1}\left(\dfrac{s_2^2}{n_2}\right)}$
+Here we use t-distribution. But for this scenario it is harder to calculate degrees of freedom:\
+$df = \dfrac{\left(\dfrac{s_{1}^{2}}{n_{1}} + \dfrac{s_{2}^{2}}{n_{2}}\right)^2}{\dfrac{1}{n_1 - 1}\left(\dfrac{s_1^2}{n_1}\right) + \dfrac{1}{n_2 - 1}\left(\dfrac{s_2^2}{n_2}\right)}$\
+Usually statistical software packages calculate this value.\
+Important to note that this test is also called Welch's t-test and assumes that both sample sizes and population variences can be unequal.\
+This test is not a default in some stats packages, but is prefered to a regular Student's test.
+
+## Test statistic for hypothesis tests about $\mu_{1} - \mu_{2}$: $\sigma_{1}$ and $\sigma_{2}$ Unknown
+$r = \dfrac{(\bar{x_1} - \bar{x_2}) - D_0}{\sqrt{\dfrac{\s_{1}^{2}}{n_{1}} + \dfrac{\s_{2}^{2}}{n_{2}}}}$\
+The degrees of freedom are calculated the same as in above example.
+
