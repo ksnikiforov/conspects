@@ -393,7 +393,7 @@ Thus we can can calculate margin of error, simmial to Chapter 8:\
 $\text{Margin of error} = z_{\alpha/2}\sigma_{\bar{x_{1}} - \bar{x_{2}}} = z_{\alpha/2}\sqrt{\dfrac{\sigma_{1}^{2}}{n_{1}} + \dfrac{\sigma_{2}^{2}}{n_{2}}}$
 
 ## Hypothesis testing about $\mu_{1} - \mu_{2}$: 
-There are three forms of hypothesis test ($D_0$ denotes the hypothesized difference)
+There are three forms of hypothesis test ( $D_0$ denotes the hypothesized difference)
 1. $H_0: \mu_{1} - \mu_{2} \geq D_0$
 2. $H_0: \mu_{1} - \mu_{2} \leq D_0$
 3. $H_0: \mu_{1} - \mu_{2} = D_0$
@@ -414,6 +414,44 @@ Important to note that this test is also called Welch's t-test and assumes that 
 This test is not a default in some stats packages, but is prefered to a regular Student's test.
 
 ## Test statistic for hypothesis tests about $\mu_{1} - \mu_{2}$: $\sigma_{1}$ and $\sigma_{2}$ Unknown
-$r = \dfrac{(\bar{x_1} - \bar{x_2}) - D_0}{\sqrt{\dfrac{\s_{1}^{2}}{n_{1}} + \dfrac{\s_{2}^{2}}{n_{2}}}}$\
+$r = \dfrac{(\bar{x_1} - \bar{x_2}) - D_0}{\sqrt{\dfrac{s_{1}^{2}}{n_{1}} + \dfrac{s_{2}^{2}}{n_{2}}}}$\
 The degrees of freedom are calculated the same as in above example.
 
+## Matched samples
+For example, a company is comparing which software makes people most productive.\
+An unmatched sample is splitting the group of workers with group 1 being assigned software A and group 2 assigned software B.\
+A matched sample in this case is not splitting the group of workers, but having each worker try both programs (random order for each).\
+In a matched scenario each worker produces two data points, as compared to unmached, where each worker only tried one of the two.\
+This approach reduces sampling error thus allowing to select use lower sample size.
+
+In the case above with matched sample we are only interested in looking at each individual person difference between two scenarios.\
+Thus a formula for a single variable test is used:
+
+$t = \dfrac{\bar{d} - \mu_d}{s_d/\sqrt{n}}$
+
+## Inferences About the Difference Between Two Population Proportions
+$\text{Point estimator} = \bar{p_1} - \bar{p_2}$
+
+$\sigma_{\bar{p_{1}} - \bar{p_{2}}} = \sqrt{\dfrac{p_1(1-p_1)}{n_1} + \dfrac{p_2(1-p_2)}{n_2}}$
+
+$\text{Margin of error} = z_{\alpha/2}\sqrt{\dfrac{p_1(1-p_1)}{n_1} + \dfrac{p_2(1-p_2)}{n_2}}$
+
+## Hypothesis Tests About $\bar{p_1} - \bar{p_2}$
+There are three forms of hypothesis test:
+1. $H_0: p_{1} - p_{2} \geq 0$
+2. $H_0: p_{1} - p_{2} \leq 0$
+3. $H_0: p_{1} - p_{2} = 0$
+
+In the 3rd case if we assume that $H_0$ is true, then $p_{1} - p_{2} = 0$ thus $p_{1} = p_{2}$\
+This is a most common testing scenario: "Is there a difference in propotions between two groups"\
+Here are formulas specifically for this scenario:
+
+Standard error of $p_{1} - p_{2}$ when $p_{1} = p_{2} = p$\
+$\sigma_{\bar{p_{1}} - \bar{p_{2}}} = \sqrt{\dfrac{p(1-p)}{n_1} + \dfrac{p(1-p)}{n_2}} = \sqrt{p(1 - p)\left( \dfrac{1}{n_1} + \dfrac{1}{n_2} \right)}$
+
+With p unknown, we pool, or combine, the point estimators as a weighted average of $\bar{p_1}$ and $\bar{p_2}$\
+$\bar{p} = \dfrac{n_1 \bar{p_1} + n_2 \bar{p_2}}{n_1 + n_2}$
+
+Test statistic for hypothesis tests about $\bar{p_1} - \bar{p_2}$\
+$z = \dfrac{(\bar{p1} - \bar{p_2}}{\sqrt{p(1 - p)\left( \dfrac{1}{n_1} + \dfrac{1}{n_2} \right)}}$\
+Where $n_1 p_1, n_1(1 - p_1), n_2 p_2, n_2(1 - p_2)$ are $\geq$ 5
