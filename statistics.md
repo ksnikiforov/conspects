@@ -378,4 +378,34 @@ Power curves are usefull when assesing the probability of Type 2 error.\
 ## Sample size
 <img width="769" alt="image" src="https://user-images.githubusercontent.com/50662246/217713432-56ffb718-aabd-4622-8042-ffeb4fcb59c5.png">
 
+# Inference About Means and Proportions with Two Populations
+## Inferences About the Difference Between Two Population Means: $\sigma_{1}$ and $\sigma_{2}$ Known
+Here we want to focus on the difference between the means: $\mu_{1} - \mu_{2}$\
+To do this we select a random sample from two populations and calculate their mean difference ($\bar{x_{1}} - \bar{x_{2}}$)\
+Standard error of $\bar{x_{1}} - \bar{x_{2}}$ is:
 
+$\sigma_{\bar{x_{1}} - \bar{x_{2}}} = \sqrt{\dfrac{\sigma_{1}^{2}}{n_{1}} + \dfrac{\sigma_{2}^{2}}{n_{2}}}$
+
+If both propotions follow normal distribution or sample size is large enough for central limit theorem,\
+the sampling distribution of $\bar{x_{1}} - \bar{x_{2}}$ will have a normal distribution with a mean of $\mu_{1} - \mu_{2}$
+
+Thus we can can calculate margin of error, simmial to Chapter 8:\
+$\text{Margin of error} = z_{\alpha/2}\sigma_{\bar{x_{1}} - \bar{x_{2}}} = z_{\alpha/2}\sqrt{\dfrac{\sigma_{1}^{2}}{n_{1}} + \dfrac{\sigma_{2}^{2}}{n_{2}}}$
+
+## Hypothesis testing about $\mu_{1} - \mu_{2}$: 
+There are three forms of hypothesis test ($D_0$ denotes the hypothesized difference)
+1. $H_0: \mu_{1} - \mu_{2} \geq D_0$
+2. $H_0: \mu_{1} - \mu_{2} \leq D_0$
+3. $H_0: \mu_{1} - \mu_{2} = D_0$
+
+Mostly the $D_0 = 0$ variant is used to check whether two populations differ
+
+## Test statistic for hypothesis tests about $\mu_{1} - \mu_{2}$: $\sigma_{1}$ and $\sigma_{2}$ Known
+$z = \dfrac{(\bar{x_1} - \bar{x_2}) - D_0}{\sqrt{\dfrac{\sigma_{1}^{2}}{n_{1}} + \dfrac{\sigma_{2}^{2}}{n_{2}}}}$
+
+## Inferences About the Difference Between Two Population Means: $\sigma_{1}$ and $\sigma_{2}$ Unknown
+$\text{Margin of error} = t_{\alpha/2}s_{\bar{x_{1}} - \bar{x_{2}}} = t_{\alpha/2}\sqrt{\dfrac{s_{1}^{2}}{n_{1}} + \dfrac{s_{2}^{2}}{n_{2}}}$
+where $1 - \alpha$ is the confidence interval.
+
+Here we use t-distributin. But for this scenario it is harder to calculate degrees of freedom:\
+$df = \dfrac{\left(\dfrac{s_{1}^{2}}{n_{1}} + \dfrac{s_{2}^{2}}{n_{2}}\right)^2}{\dfrac{1}{n_1 - 1}\left(\dfrac{s_1^2}{n_1}\right) + \dfrac{1}{n_2 - 1}\left(\dfrac{s_2^2}{n_2}\right)}$
