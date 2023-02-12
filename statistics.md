@@ -453,5 +453,5 @@ With p unknown, we pool, or combine, the point estimators as a weighted average 
 $\bar{p} = \dfrac{n_1 \bar{p_1} + n_2 \bar{p_2}}{n_1 + n_2}$
 
 Test statistic for hypothesis tests about $\bar{p_1} - \bar{p_2}$\
-$z = \dfrac{(\bar{p1} - \bar{p_2}}{\sqrt{p(1 - p)\left( \dfrac{1}{n_1} + \dfrac{1}{n_2} \right)}}$\
+$z = \dfrac{(\bar{p_1} - \bar{p_2})}{\sqrt{p(1 - p)\left( \dfrac{1}{n_1} + \dfrac{1}{n_2} \right)}}$\
 Where $n_1 p_1, n_1(1 - p_1), n_2 p_2, n_2(1 - p_2)$ are $\geq$ 5
