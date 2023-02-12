@@ -414,7 +414,7 @@ Important to note that this test is also called Welch's t-test and assumes that 
 This test is not a default in some stats packages, but is prefered to a regular Student's test.
 
 ## Test statistic for hypothesis tests about $\mu_{1} - \mu_{2}$: $\sigma_{1}$ and $\sigma_{2}$ Unknown
-$r = \dfrac{(\bar{x_1} - \bar{x_2}) - D_0}{\sqrt{\dfrac{s_{1}^{2}}{n_{1}} + \dfrac{s_{2}^{2}}{n_{2}}}}$\
+$t = \dfrac{(\bar{x_1} - \bar{x_2}) - D_0}{\sqrt{\dfrac{s_{1}^{2}}{n_{1}} + \dfrac{s_{2}^{2}}{n_{2}}}}$\
 The degrees of freedom are calculated the same as in above example.
 
 ## Matched samples
