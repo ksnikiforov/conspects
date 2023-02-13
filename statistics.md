@@ -1,6 +1,6 @@
 # 1. Measures of Location
 ## Mean (Average)
-Simple average\
+Simple average  
 Can be trimmed, ex: Removing top and bottom 5% to deal with extreme values
 
 $\bar{x} = \dfrac{\Sigma x_{i}}{n}$
@@ -14,7 +14,7 @@ Difference from standard mean:
 1. Simmilar concept to CAGS
 
 ## Percentile
-The _pth percentile_ divides the data into two parts:\
+The _pth percentile_ divides the data into two parts:  
 approximately p% of the observations are less than the pth percentile
 
 $L_{p} = \dfrac{p}{100}(n+1)$
@@ -35,9 +35,9 @@ $\mathrm{IQR} = Q_{3} - Q_{1}$
 ## Variance
 The variance is based on the difference between the value of each observation $x_{i}$ and the mean.
 ### Population Variance
-$\sigma$ - Sigma, Denotes standard deviation\
-$\sigma^2$ - Population Varience\
-$\mu$ - Mu, Mean for the population
+$\sigma$ - Sigma, Denotes standard deviation  
+$\sigma^2$ - Population Varience  
+$\mu$ - Mu, Mean for the population  
 
 $\sigma^2 = \dfrac{\Sigma(x_{i} - \mu)^2}{N}$
 
@@ -49,12 +49,12 @@ $s^2 = \dfrac{\Sigma (x_{i} - \bar{x})^2}{n - 1}$
 ## Standard deviation
 Is calculated as a square root of varience
 
-The standard deviation is measured in the same units as the original data.\
-For this reason the standard deviation is more easily compared to the mean and \
+The standard deviation is measured in the same units as the original data.  
+For this reason the standard deviation is more easily compared to the mean and  
 other statistics that are measured in the same units as the original data.
 
-Sample standard deviation: $s = \sqrt{s^2}$\
-Population standard deviation: $\sigma = \sqrt{\sigma^2}$
+Sample standard deviation: $s = \sqrt{s^2}$  
+Population standard deviation: $\sigma = \sqrt{\sigma^2}$  
 
 ## Coefficient of Variation
 Descriptive statistic that indicates how large the standard deviation is relative to the mean
@@ -70,7 +70,7 @@ number of standard deviations $x_{i}$ is from the mean $\bar{x}$.
 $z_{i} = \dfrac{x_{i} - \bar{x}}{s}$
 
 Chernobyshev's Theorem:
-At least $(1 - 1/z^2)$ of the data values must be within $z$ standard deviations of the mean,\
+At least $(1 - 1/z^2)$ of the data values must be within $z$ standard deviations of the mean,  
 where $z$ is any value greater than 1.
 
 <img width="763" alt="image" src="https://user-images.githubusercontent.com/50662246/212482913-40540818-937f-4f6d-ab58-4c8ad3e72462.png">
@@ -95,7 +95,7 @@ where $z$ is any value greater than 1.
      - Outliers are shown as asterisks
 <img width="821" alt="image" src="https://user-images.githubusercontent.com/50662246/212493871-4125184f-795c-4ecc-9112-d0357599ecb3.png">
 
-# Measures of Association Between Two Variables
+# 3. Measures of Association Between Two Variables
 ## Covariance
 Measure of the directional relationship between two random variables
 ### Sample covariance
@@ -103,44 +103,44 @@ $s_{xy} = \dfrac{\Sigma (x_{i} - \bar{x}) (y_{i} - \bar{y})}{n-1}$
 ### Population covariance
 $\sigma_{xy} = \dfrac{\Sigma (x_{i} - \mu_{x}) (y_{i} - \mu_{y})}{N}$
 ### Interpretation:
-Points in quadrant $I$ correspond to $x_{i} > \bar{x}$ and $y_{i} > \bar{y}$\
+Points in quadrant $I$ correspond to $x_{i} > \bar{x}$ and $y_{i} > \bar{y}$  
 Points in quadrant $II$ correspond to $x_{i} < \bar{x}$ and $y_{i} > y$
 
-Thus, the value of $(x_{i} − x)(y_{i} − y)$ must be\
-$>0$ for $I$ \
-$<0$ for $II$ \
-$>0$ for $III$ \
+Thus, the value of $(x_{i} − x)(y_{i} − y)$ must be  
+$>0$ for $I$  
+$<0$ for $II$  
+$>0$ for $III$  
 $<0$ for $IV$ 
 
-Thus positive values indicate positive relationship vetween x and y\
+Thus positive values indicate positive relationship vetween x and y  
 However, this measure is affected by unit of measurement (ex: large x, small y)
 <img width="828" alt="image" src="https://user-images.githubusercontent.com/50662246/212494422-d970d11e-bcaf-45be-bad3-ae1118aa9cca.png">
 
 ## Correlation Coefficient
-Not affected by units of measurement\
+Not affected by units of measurement  
 Shows how strong the relationship between variables is
 
 ### Sample correlation
-$r_{xy} = \dfrac{s_{xy}}{s_{x} s_{y}}$\
-where\
-$r_{xy} = \text{sample correlation coefficient}$\
-$s_{xy} = \text{sample covariance}$\
-$s_{x} = \text{sample standard deviation of x}$\
+$r_{xy} = \dfrac{s_{xy}}{s_{x} s_{y}}$  
+where  
+$r_{xy} = \text{sample correlation coefficient}$  
+$s_{xy} = \text{sample covariance}$  
+$s_{x} = \text{sample standard deviation of x}$  
 $s_{y} = \text{sample standard deviation of y}$
 
 ### Population correlation
-$p_{xy} = \dfrac{\sigma_{xy}}{\sigma_{x} \sigma_{y}}$\
-where\
-$p_{xy} = \text{population correlation coefficient}$\
-$\sigma_{xy} = \text{population covariance}$\
-$\sigma_{x} = \text{population standard deviation of x}$\
+$p_{xy} = \dfrac{\sigma_{xy}}{\sigma_{x} \sigma_{y}}$  
+where  
+$p_{xy} = \text{population correlation coefficient}$  
+$\sigma_{xy} = \text{population covariance}$  
+$\sigma_{x} = \text{population standard deviation of x}$  
 $\sigma_{y} = \text{population standard deviation of y}$
 
 ## Interpretation
-A sample correlation coefficient of +1 corresponds to a perfect positive linear relationship between x and y.\
+A sample correlation coefficient of +1 corresponds to a perfect positive linear relationship between x and y.  
 This is true if points can be connected by a straight line
 
-# Combinations & Permutations
+# 4. Combinations & Permutations
 ## Counting rule for combinations
 Selecting n objects from a set of N objects (order is not important)
 
@@ -151,16 +151,16 @@ Selecting n objects from a set of N objects where order is important
 
 $P_{n}^N = n! \dbinom{N}{n} = \dfrac{N!}{(N-n)!}$
 
-# Probability
+# 5. Probability
 ## Conditional probability
 $P(A)$ - Probability of event A
 
 $P(A^c)$ - Probability of complement of event A (opposite of event A)
 
-$\cap$ - Intersection of two events\
+$\cap$ - Intersection of two events  
 <img width="528" alt="image" src="https://user-images.githubusercontent.com/50662246/213828302-09afb47e-3790-4282-96db-8afc5371dad9.png">
 
-$\cup$ - Union of two events\
+$\cup$ - Union of two events  
 <img width="518" alt="image" src="https://user-images.githubusercontent.com/50662246/213828239-4acf8690-4f52-4957-b212-664191f07595.png">\
 $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 
@@ -189,7 +189,7 @@ $P(A | B) = \dfrac{P(A)P(B|A)}{P(B)}$
 For multiple events\
 $P(A_i | B) = \dfrac{P(A_i)P(B | A_i)}{P(A_1)P(B | A_1) + P(A_2)P(B | A_2) + \dots + P(A_n)P(B | A_n)}$
 
-# Probability Distributions
+# 6. Probability Distributions
 
 ## Uniform Distribution
 
@@ -210,8 +210,8 @@ $f(x) = \dfrac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x - \mu}{\sigma})^2}
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/50662246/213919330-0421c4eb-5b3a-4b28-8be8-9161a4029c6e.png">
 
-Standard normal probability density function\
-Special case where $\mu = 0$ and $\sigma = 1$\
+Standard normal probability density function  
+Special case where $\mu = 0$ and $\sigma = 1$  
 Benefit is that values are precomputed and can be easily converted to the actual distribution
 
 $f(z) = \dfrac{1}{\sqrt{2\pi}}e^{\dfrac{-z^2}{2}}$
@@ -224,12 +224,12 @@ $z = \dfrac{x - \mu}{\sigma}$
 
 ## Exponential probability distribution
 
-$f(x) = \dfrac{1}{\mu} e^{-x/\mu}  \quad \text{for } x >= 0$\
+$f(x) = \dfrac{1}{\mu} e^{-x/\mu}  \quad \text{for } x >= 0$  
 $\text{where }\mu = \text{expected value or mean}$
 
 <img width="313" alt="image" src="https://user-images.githubusercontent.com/50662246/213919890-e595aa87-dde7-4f2a-81f1-256f51945410.png">
 
-# Sampling
+# 7. Sampling
 ## Expected value of $\bar{x}$
 Expected value for mean of sample is population mean
 
@@ -240,15 +240,15 @@ $E(\bar{x}) = \mu$
 Depends on whether the population is finite or infinite
 
 ### Infinite population
-OR sample size $<=$ 5% of the total population\
+OR sample size $<=$ 5% of the total population  
 $\sigma_{\bar{x}} = \dfrac{\sigma}{\sqrt{n}}$
 
 ### Finite population
 $\sigma_{\bar{x}} = \sqrt{\dfrac{N - n}{N - 1}} \left( \dfrac{\sigma}{\sqrt{n}} \right)$
 
 ### Central limit theorem
-The sampling distribution of the sample mean $\bar{x}$ can be approximated by a normal distribution as the sample size becomes large.\
-General statistical practice: if n > 30, $\bar{x}$ can be estimated using normal distribution\
+The sampling distribution of the sample mean $\bar{x}$ can be approximated by a normal distribution as the sample size becomes large.  
+General statistical practice: if n > 30, $\bar{x}$ can be estimated using normal distribution  
 In cases when population is highly skewed or outliers are present n > 50 is recomended
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/50662246/213938162-68258a18-9a1c-4819-9b3e-b577c90ad800.png">
@@ -266,7 +266,7 @@ $E(\bar{p}) = p$
 ## Standard deviation of $\bar{p}$
 
 ### Infinite population
-OR sample size $<=$ 5% of the total population\
+OR sample size $<=$ 5% of the total population  
 
 $\sigma_{\bar{p}} = \sqrt{\dfrac{p(1 - p)}{n}}$
 
@@ -286,54 +286,54 @@ $np >= 5 \quad \text{and} \quad n(1-p) >= 5$
 4. Convenience Sampling
 5. Judgment Sampling
 
-# Interval estimation (8)
-Because point estimation cannot be expected to provide the exact value of the population parameter,\
-an interval estimate is computed\
+# 8. Interval estimation
+Because point estimation cannot be expected to provide the exact value of the population parameter,  
+an interval estimate is computed  
 $\text{Interval estimate} = \text{Point estimate} \pm \text{Margin of error}$
 
 ## Population mean: $\sigma$ Known
-Usually the population mean is unknown\
-However, there are scenarios where population mean IS known (or can be estimated with high accuracy)\
-For example:\
+Usually the population mean is unknown  
+However, there are scenarios where population mean IS known (or can be estimated with high accuracy)  
+For example:  
 1. When large amount of historical data is present and can be used to estimate the population standard deviation prior to sampling
 2. In quality control applications where a process is assumed to be operating correctly
 
 Interval estimate of a population mean: $\sigma$ Known
 
-$\bar{x} \pm z_{\alpha/2}\dfrac{\sigma}{\sqrt{n}}$\
-Where $(1 - \alpha)$ is confidence level and $z_{\alpha/2}$ is the $z$ value\
+$\bar{x} \pm z_{\alpha/2}\dfrac{\sigma}{\sqrt{n}}$  
+Where $(1 - \alpha)$ is confidence level and $z_{\alpha/2}$ is the $z$ value  
 providing an area of $\alpha/2$ in the upper tail of the standard normal probability distribution.
 
 ## Population mean: $\sigma$ Unknown
 
-When the sample standard deviation is used to estimate $\sigma$,\
-the margin of error and interval estimate are based on t-distribution.\
-Although t-distribution is based on assumption of normal distribution\
+When the sample standard deviation is used to estimate $\sigma$,  
+the margin of error and interval estimate are based on t-distribution.  
+Although t-distribution is based on assumption of normal distribution  
 research shows that it can be applied in cases where distribution differs significantly from normal.
 
-t-distribution relies on degrees of freedom paramtere. \
-The higher the degrees of freedom, the closer is t-distribution to normal-distribution\
+t-distribution relies on degrees of freedom paramtere.  
+The higher the degrees of freedom, the closer is t-distribution to normal-distribution  
 <img width="504" alt="image" src="https://user-images.githubusercontent.com/50662246/216847720-af9e490f-3584-4656-8688-6273480a58e1.png">
 
 Interval estimate of a population mean: $\sigma$ Unknown
 
 
 $\bar{x} \pm t_{\alpha/2}\dfrac{s}{\sqrt{n}}$\
-Where $(1 - \alpha)$ is confidence level and $t_{\alpha/2}$ is the $t$ value\
+Where $(1 - \alpha)$ is confidence level and $t_{\alpha/2}$ is the $t$ value  
 providing an area of $\alpha/2$ in the upper tail of the t distribution with $n - 1$ degrees of freedom.
 
 
-The reason degrees of freedom in the expression is $(n - 1)$ concerns the use of $s$ as an estimate of population $\sigma$\
-$s = \sqrt{\dfrac{\Sigma(x_{i} - \bar{x})^2}{n-1}}$\
+The reason degrees of freedom in the expression is $(n - 1)$ concerns the use of $s$ as an estimate of population $\sigma$  
+$s = \sqrt{\dfrac{\Sigma(x_{i} - \bar{x})^2}{n-1}}$  
 Degrees of freedom refer to the number of independent pieces of information that go into the computation of $\Sigma(x_{i} - \bar{x})^2$
 
 ## Determening the sample size (8.3)
-$n = \dfrac{(z_{\alpha/2})^2 \sigma^2}{E^2}$\
-Where $E$ is the margin of error that the user is willing to accept\
+$n = \dfrac{(z_{\alpha/2})^2 \sigma^2}{E^2}$  
+Where $E$ is the margin of error that the user is willing to accept  
 and $z_{\alpha/2}$ follows directly from the confidence level desired (usually 95%)
 
 
-The equation requres $\sigma$ to be known. However, $\sigma$ is usually not known.\
+The equation requres $\sigma$ to be known. However, $\sigma$ is usually not known.  
 We can use following to estimate $\sigma$:
 1. Use data of previous studies as the planning value for $\sigma$
 2. Use a pilot study to select a preliminary sample
@@ -346,13 +346,13 @@ $\bar{p} \pm z_{\alpha/2} \sqrt{\dfrac{\bar{p}(1 - \bar{p})}{n}}$
 
 Sample size for an interval estimate of population proportion
 
-$n = \dfrac{(z_{\alpha/2})^2 p^{\ast}(1-p^{\ast}))}{E^2}$\
-Where $p^{\ast}$ is a planing value.\
-Same estimation methods as for $\sigma$ apply. \
-If none are possible one can use $p^{\ast} = .50$ \
+$n = \dfrac{(z_{\alpha/2})^2 p^{\ast}(1-p^{\ast}))}{E^2}$  
+Where $p^{\ast}$ is a planing value.  
+Same estimation methods as for $\sigma$ apply.  
+If none are possible one can use $p^{\ast} = .50$  
 This is the case because the largest value for $p^{\ast}(1-p^{\ast})$ is obtained when $p^{\ast} = .50$ 
 
-# Hypothesis testing
+# 9. Hypothesis testing
 ## Type 1 & Type 2 Errors
 <img width="615" alt="image" src="https://user-images.githubusercontent.com/50662246/217712660-0700f890-c40f-4814-a64b-7823b37f1b5a.png">
 
@@ -362,34 +362,34 @@ This is the case because the largest value for $p^{\ast}(1-p^{\ast})$ is obtaine
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/50662246/217701326-d3408d35-e859-40c0-a9da-da7bc85816e7.png">
 
 ## Computing probability of Type 2 error
-If the decision is binary, ie we either reject or accept null hypothesis (instead of usually not rejecting)\
+If the decision is binary, ie we either reject or accept null hypothesis (instead of usually not rejecting)  
 Then a Type 2 error can occur - we accept the result which should have been rejected.
 
-For any true median of population, the probability of type 2 error is calculated by this formula:\
-$z = \dfrac{\bar{x} - \mu}{\sigma / \sqrt{n}}$\
+For any true median of population, the probability of type 2 error is calculated by this formula:  
+$z = \dfrac{\bar{x} - \mu}{\sigma / \sqrt{n}}$  
 Where $\bar{x}$ is the bound of accepting the null hypothesis.
 
 <img width="749" alt="image" src="https://user-images.githubusercontent.com/50662246/217712404-a142ccc1-fc94-445b-a6ae-0ee65aca1d67.png">
 
-Power curves are usefull when assesing the probability of Type 2 error.\
+Power curves are usefull when assesing the probability of Type 2 error.  
 (also operating characteristic curve)
 <img width="749" alt="image" src="https://user-images.githubusercontent.com/50662246/217712529-a7708720-f5cf-4221-97b4-fc2497d521c9.png">
 
 ## Sample size
 <img width="769" alt="image" src="https://user-images.githubusercontent.com/50662246/217713432-56ffb718-aabd-4622-8042-ffeb4fcb59c5.png">
 
-# Inference About Means and Proportions with Two Populations
+# 10. Inference About Means and Proportions with Two Populations
 ## Inferences About the Difference Between Two Population Means: $\sigma_{1}$ and $\sigma_{2}$ Known
-Here we want to focus on the difference between the means: $\mu_{1} - \mu_{2}$\
-To do this we select a random sample from two populations and calculate their mean difference ($\bar{x_{1}} - \bar{x_{2}}$)\
+Here we want to focus on the difference between the means: $\mu_{1} - \mu_{2}$  
+To do this we select a random sample from two populations and calculate their mean difference ($\bar{x_{1}} - \bar{x_{2}}$)  
 Standard error of $\bar{x_{1}} - \bar{x_{2}}$ is:
 
 $\sigma_{\bar{x_{1}} - \bar{x_{2}}} = \sqrt{\dfrac{\sigma_{1}^{2}}{n_{1}} + \dfrac{\sigma_{2}^{2}}{n_{2}}}$
 
-If both propotions follow normal distribution or sample size is large enough for central limit theorem,\
+If both propotions follow normal distribution or sample size is large enough for central limit theorem,  
 the sampling distribution of $\bar{x_{1}} - \bar{x_{2}}$ will have a normal distribution with a mean of $\mu_{1} - \mu_{2}$
 
-Thus we can can calculate margin of error, simmial to Chapter 8:\
+Thus we can can calculate margin of error, simmial to Chapter 8:  
 $\text{Margin of error} = z_{\alpha/2}\sigma_{\bar{x_{1}} - \bar{x_{2}}} = z_{\alpha/2}\sqrt{\dfrac{\sigma_{1}^{2}}{n_{1}} + \dfrac{\sigma_{2}^{2}}{n_{2}}}$
 
 ## Hypothesis testing about $\mu_{1} - \mu_{2}$: 
@@ -404,27 +404,27 @@ Mostly the $D_0 = 0$ variant is used to check whether two populations differ
 $z = \dfrac{(\bar{x_1} - \bar{x_2}) - D_0}{\sqrt{\dfrac{\sigma_{1}^{2}}{n_{1}} + \dfrac{\sigma_{2}^{2}}{n_{2}}}}$
 
 ## Inferences About the Difference Between Two Population Means: $\sigma_{1}$ and $\sigma_{2}$ Unknown
-$\text{Margin of error} = t_{\alpha/2}s_{\bar{x_{1}} - \bar{x_{2}}} = t_{\alpha/2}\sqrt{\dfrac{s_{1}^{2}}{n_{1}} + \dfrac{s_{2}^{2}}{n_{2}}}$\
+$\text{Margin of error} = t_{\alpha/2}s_{\bar{x_{1}} - \bar{x_{2}}} = t_{\alpha/2}\sqrt{\dfrac{s_{1}^{2}}{n_{1}} + \dfrac{s_{2}^{2}}{n_{2}}}$  
 where $1 - \alpha$ is the confidence interval.
 
-Here we use t-distribution. But for this scenario it is harder to calculate degrees of freedom:\
-$df = \dfrac{\left(\dfrac{s_{1}^{2}}{n_{1}} + \dfrac{s_{2}^{2}}{n_{2}}\right)^2}{\dfrac{1}{n_1 - 1}\left(\dfrac{s_1^2}{n_1}\right) + \dfrac{1}{n_2 - 1}\left(\dfrac{s_2^2}{n_2}\right)}$\
-Usually statistical software packages calculate this value.\
-Important to note that this test is also called Welch's t-test and assumes that both sample sizes and population variences can be unequal.\
+Here we use t-distribution. But for this scenario it is harder to calculate degrees of freedom:  
+$df = \dfrac{\left(\dfrac{s_{1}^{2}}{n_{1}} + \dfrac{s_{2}^{2}}{n_{2}}\right)^2}{\dfrac{1}{n_1 - 1}\left(\dfrac{s_1^2}{n_1}\right) + \dfrac{1}{n_2 - 1}\left(\dfrac{s_2^2}{n_2}\right)}$  
+Usually statistical software packages calculate this value.  
+Important to note that this test is also called Welch's t-test and assumes that both sample sizes and population variences can be unequal.  
 This test is not a default in some stats packages, but is prefered to a regular Student's test.
 
 ## Test statistic for hypothesis tests about $\mu_{1} - \mu_{2}$: $\sigma_{1}$ and $\sigma_{2}$ Unknown
-$t = \dfrac{(\bar{x_1} - \bar{x_2}) - D_0}{\sqrt{\dfrac{s_{1}^{2}}{n_{1}} + \dfrac{s_{2}^{2}}{n_{2}}}}$\
+$t = \dfrac{(\bar{x_1} - \bar{x_2}) - D_0}{\sqrt{\dfrac{s_{1}^{2}}{n_{1}} + \dfrac{s_{2}^{2}}{n_{2}}}}$  
 The degrees of freedom are calculated the same as in above example.
 
 ## Matched samples
-For example, a company is comparing which software makes people most productive.\
-An unmatched sample is splitting the group of workers with group 1 being assigned software A and group 2 assigned software B.\
-A matched sample in this case is not splitting the group of workers, but having each worker try both programs (random order for each).\
-In a matched scenario each worker produces two data points, as compared to unmached, where each worker only tried one of the two.\
+For example, a company is comparing which software makes people most productive.  
+An unmatched sample is splitting the group of workers with group 1 being assigned software A and group 2 assigned software B.  
+A matched sample in this case is not splitting the group of workers, but having each worker try both programs (random order for each).  
+In a matched scenario each worker produces two data points, as compared to unmached, where each worker only tried one of the two.  
 This approach reduces sampling error thus allowing to select use lower sample size.
 
-In the case above with matched sample we are only interested in looking at each individual person difference between two scenarios.\
+In the case above with matched sample we are only interested in looking at each individual person difference between two scenarios.  
 Thus a formula for a single variable test is used:
 
 $t = \dfrac{\bar{d} - \mu_d}{s_d/\sqrt{n}}$
@@ -442,16 +442,17 @@ There are three forms of hypothesis test:
 2. $H_0: p_{1} - p_{2} \leq 0$
 3. $H_0: p_{1} - p_{2} = 0$
 
-In the 3rd case if we assume that $H_0$ is true, then $p_{1} - p_{2} = 0$ thus $p_{1} = p_{2}$\
-This is a most common testing scenario: "Is there a difference in propotions between two groups"\
+In the 3rd case if we assume that $H_0$ is true, then $p_{1} - p_{2} = 0$ thus $p_{1} = p_{2}$  
+This is a most common testing scenario: "Is there a difference in propotions between two groups"  
 Here are formulas specifically for this scenario:
 
-Standard error of $p_{1} - p_{2}$ when $p_{1} = p_{2} = p$\
+Standard error of $p_{1} - p_{2}$ when $p_{1} = p_{2} = p$  
 $\sigma_{\bar{p_{1}} - \bar{p_{2}}} = \sqrt{\dfrac{p(1-p)}{n_1} + \dfrac{p(1-p)}{n_2}} = \sqrt{p(1 - p)\left( \dfrac{1}{n_1} + \dfrac{1}{n_2} \right)}$
 
-With p unknown, we pool, or combine, the point estimators as a weighted average of $\bar{p_1}$ and $\bar{p_2}$\
+With p unknown, we pool, or combine, the point estimators as a weighted average of $\bar{p_1}$ and $\bar{p_2}$  
 $\bar{p} = \dfrac{n_1 \bar{p_1} + n_2 \bar{p_2}}{n_1 + n_2}$
 
-Test statistic for hypothesis tests about $\bar{p_1} - \bar{p_2}$\
-$z = \dfrac{(\bar{p_1} - \bar{p_2})}{\sqrt{p(1 - p)\left( \dfrac{1}{n_1} + \dfrac{1}{n_2} \right)}}$\
-Where $n_1 p_1, n_1(1 - p_1), n_2 p_2, n_2(1 - p_2)$ are $\geq$ 5
+Test statistic for hypothesis tests about $\bar{p_1} - \bar{p_2}$  
+$z = \dfrac{(\bar{p_1} - \bar{p_2})}{\sqrt{p(1 - p)\left( \dfrac{1}{n_1} + \dfrac{1}{n_2} \right)}}$  
+Where $n_1 p_1, n_1(1 - p_1), n_2 p_2, n_2(1 - p_2)$ are $
+geq$ 5
